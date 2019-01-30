@@ -57,7 +57,6 @@ public class ClientThread extends Thread {
         } else {
             Log.e("zxy", "蓝牙连接失败");
             close();
-
             Message msg = new Message();
             msg.obj = "连接服务端异常！断开连接重试。";
             msg.what = ChatConstant.CONNECT_SERVER_ERROR;
